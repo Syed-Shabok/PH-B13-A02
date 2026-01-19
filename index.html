@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Tech Wave</title>
+  </head>
+  <body>
+    <header class="bg-[#1A0B2E]">
+      <!-- Navbar -->
+      <nav
+        class="relative px-5 py-4 lg:px-[12.5rem] flex justify-between lg:grid lg:grid-cols-3 items-center"
+      >
+        <h1 class="text-4xl font-bold text-[#FFFFFF]">
+          <a href="/"
+            >Tech<span
+              class="text-transparent bg-clip-text bg-linear-to-t from-[#F7E93F] via-[#FB09B4] to-[#9100F8]"
+              >Wave</span
+            ></a
+          >
+        </h1>
+
+        <input type="checkbox" id="open-navlinks" class="hidden peer" />
+        <label for="open-navlinks" class="lg:hidden cursor-pointer z-10">
+          <img src="./assets/hamburger-menu.png" alt="Hamburger Menu Button" />
+        </label>
+
+        <ul
+          class="nav-links text-[#FFFFFF] font-medium list-none absolute top-full right-0 w-fit bg-[#1A0B2E] rounded-bl-lg flex-col p-5 gap-5 hidden peer-checked:flex lg:static lg:flex lg:flex-row lg:gap-[2rem] lg:justify-self-center lg:bg-transparent lg:w-auto lg:py-0 items-center z-5"
+        >
+          <li class="nav-link">
+            <a href="" class="nav-item hover:text-yellow-300">About</a>
+          </li>
+
+          <li class="nav-link">
+            <a href="" class="nav-item hover:text-yellow-300">Episodes</a>
+          </li>
+
+          <li class="nav-link">
+            <a href="" class="nav-item hover:text-yellow-300">Host</a>
+          </li>
+
+          <li class="nav-link lg:hidden">
+            <button
+              class="flex gap-[0.25rem] items-center justify-center px-[1rem] py-[0.6rem] text-[#FFFFFF] rounded-3xl bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] font-semibold hover:scale-105 duration-300"
+            >
+              Subscribe
+
+              <img
+                class="w-[1.25rem]"
+                src="./assets/arrow-right.png"
+                alt="An arrow icon"
+              />
+            </button>
+          </li>
+        </ul>
+
+        <div class="hidden lg:flex justify-end">
+          <button
+            class="flex gap-[0.25rem] items-center justify-center px-[1rem] py-[0.6rem] text-[#FFFFFF] rounded-3xl bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] font-semibold hover:scale-105 duration-300"
+          >
+            Subscribe
+
+            <img
+              class="w-[1.25rem]"
+              src="./assets/arrow-right.png"
+              alt="An arrow icon"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
