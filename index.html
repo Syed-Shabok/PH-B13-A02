@@ -80,12 +80,18 @@
           </button>
         </div>
       </nav>
+      <!-- border-b-1 border-[#9100F8] -->
+      <hr class="border-none h-[0.01rem] bg-[#3b0d5a]" />
 
+      <!-- Hero Section -->
       <section
-        class="hero-section h-[30rem] lg:h-[47.5rem] bg-[url('./assets/hero-bg.png')] bg-contain bg-no-repeat bg-position-[center_top_4rem] md:bg-position-[center_top_1rem] lg:bg-center flex flex-col gap-[2.5rem] items-center justify-center"
+        class="hero-section relative h-[30rem] lg:h-[47.5rem] bg-[url('./assets/hero-bg.png')] bg-contain bg-no-repeat bg-position-[center_top_4rem] md:bg-position-[center_top_1rem] lg:bg-center flex flex-col gap-[2.5rem] items-center justify-center"
       >
+        <!-- blue tint -->
+        <div class="absolute inset-0 z-2 bg-blue-500/8 md:hidden"></div>
+
         <div
-          class="hero-img relative h-[12.5rem] w-[12.5rem] lg:h-[22rem] lg:w-[22rem] bg-[url('./assets/hero-circle.png')] bg-cover bg-center flex items-center justify-center"
+          class="hero-img relative h-[12.5rem] w-[12.5rem] lg:h-[22rem] lg:w-[22rem] bg-[url('./assets/hero-circle.png')] bg-cover bg-center flex items-center justify-center z-3"
         >
           <img
             src="./assets/microphone.png"
@@ -101,7 +107,7 @@
         </div>
 
         <div
-          class="hero-content scale-[90%] lg:scale-[100%] text-[#FFFFFF] text-center"
+          class="hero-content scale-[90%] lg:scale-[100%] text-[#FFFFFF] text-center z-3"
         >
           <h1 class="text-5xl lg:text-6xl font-extrabold mb-[0.5rem]">
             TechWave
@@ -214,5 +220,62 @@
         </div>
       </section>
     </header>
+
+    <main>
+      <!-- About Section -->
+      <section class="about-section bg-[#1A0B2E] pt-6">
+        <div
+          class="about-text text-[#FFFFFF] text-center w-[95%] lg:w-3/4 mx-auto"
+        >
+          <h1 class="text-3xl lg:text-5xl font-bold mb-4">About the Podcast</h1>
+          <p class="lg:w-[70%] mx-auto">
+            TechWave is your go-to podcast for staying ahead in the fast-paced
+            world of technology. We break down complex topics into digestible
+            insights, explore productivity strategies that actually work, and
+            share stories of personal growth from industry leaders. <br /><br />
+            Join thousands of young professionals and tech enthusiasts who start
+            their day with TechWave.
+          </p>
+          <hr class="border-none h-[0.01rem] bg-[#3b0d5a] my-8 lg:my-[5rem]" />
+        </div>
+
+        <div
+          class="about-cards-container text-center w-3/4 mx-auto grid grid-cols-2 lg:flex gap-[5rem] pb-[7rem]"
+        >
+          <div class="about-card text-center lg:w-2/5">
+            <h1 class="text-4xl md:text-5xl font-[900] text-[#00FF88] mb-4">
+              150K+
+            </h1>
+            <p class="text-sm md:text-xl uppercase text-[#FFFFFF]">
+              Monthly Listeners
+            </p>
+          </div>
+          <div class="about-card text-center lg:w-2/5">
+            <h1 class="text-4xl md:text-5xl font-[900] text-[#00FF88] mb-4">
+              200+
+            </h1>
+            <p class="text-sm md:text-xl uppercase text-[#FFFFFF]">
+              Episodes Published
+            </p>
+          </div>
+          <div class="about-card text-center lg:w-2/5">
+            <h1 class="text-4xl md:text-5xl font-[900] text-[#00FF88] mb-4">
+              4.9★
+            </h1>
+            <p class="text-sm md:text-xl uppercase text-[#FFFFFF]">
+              Average Rating
+            </p>
+          </div>
+          <div class="about-card text-center lg:w-2/5">
+            <h1 class="text-4xl md:text-5xl font-[900] text-[#00FF88] mb-4">
+              50+
+            </h1>
+            <p class="text-sm md:text-xl uppercase text-[#FFFFFF]">
+              Industry Experts
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
